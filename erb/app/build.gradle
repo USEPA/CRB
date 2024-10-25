@@ -43,6 +43,8 @@ jlink {
     launcher {
         name = 'ERB'
     }
+    mergedModule {
+    }
     jpackage {
         imageName='ERB'
    		if(org.gradle.internal.os.OperatingSystem.current().windows){

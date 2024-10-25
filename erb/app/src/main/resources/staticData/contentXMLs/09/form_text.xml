@@ -10,44 +10,82 @@
 			text="About">
 			</text>
 		</textBlock>
-				<textBlock>
+		<textBlock>
 			<text
-			size="18.0"
+			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="">
+			text="The Equitable Resilience Builder (ERB) is a downloadable application developed by the EPA Office of Research and Development (ORD) to support communities in resilience planning efforts with a focus on equity.  The application is designed for use by local government officials, planners, or non-profit organizations in collaboration with community residents and other local partners. Users are guided through a set of activities designed to be completed with robust community engagement. You may want to complete the entire process or select sections or activities that support your goals. For more information on how to use ERB, read the ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="User Guide"
+			linkType="URL"
+			link="https://www.epa.gov/emergency-response-research/equitable-resilience-builder">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text=", available on the website.">
 			</text>
 		</textBlock>
 		<textBlock>
 			<text
 			size="16.0"
 			fontFamily="System"
+			fontStyle="Underlined"
+			text="Version:">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
 			fontStyle="Regular"
-			text="Version: ERB 1.0">
+			text=" ERB 1.3">
 			</text>
 		</textBlock>	
 		<textBlock>
 			<text
 			size="16.0"
 			fontFamily="System"
+			fontStyle="Underlined"
+			text="Year:">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
 			fontStyle="Regular"
-			text="Year: 2023">
+			text=" 2024">
 			</text>
 		</textBlock>
 		<textBlock>
 			<text
 			size="16.0"
 			fontFamily="System"
+			fontStyle="Underlined"
+			text="Created by:">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
 			fontStyle="Regular"
-			text="Created by: U.S. Environmental Protection Agency, Office of Research and Development">
+			text=" U.S. Environmental Protection Agency, Office of Research and Development">
 			</text>
 		</textBlock>
 		<textBlock>
 			<text
 			size="16.0"
 			fontFamily="System"
-			fontStyle="Regular"
-			text="Contact: ">
+			fontStyle="Underlined"
+			text="Contact:">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Underlined"
+			text=" ">
 			</text>
 			<text
 			size="16.0"
@@ -62,8 +100,22 @@
 			<text
 			size="16.0"
 			fontFamily="System"
+			fontStyle="Underlined"
+			text="Code repository:">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
 			fontStyle="Regular"
-			text="Code repository: Github">
+			text=" ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="GitHub"
+			linkType="URL"
+			link="https://github.com/USEPA/Equitable-Resilience-Builder-GUI">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -71,15 +123,231 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="Disclaimer: This product has been reviewed in accordance with U.S. Environmental Protection Agency (EPA) policy and approved for publication. It does not represent and should not be construed to represent any agency determination or policy. Work by contractors to produce this product did not include establishing Agency policy. Mention of trade names or commercial products does not constitute endorsement or recommendation for use by the United States Government or the U.S. EPA. Execution of any software program, and modification to system configuration files must be made at the user's own risk. Neither the U.S. EPA nor the program author(s) can assume responsibility for program modification, content, output, interpretation, or usage. This program has been extensively tested and verified. However, as for all complex software, it may not be completely free of errors and may not be applicable for all cases. In no event will the U.S. EPA be liable for direct, indirect, special, incidental, or consequential damages arising out of the use of the program and/or associated documentation. ">
+			text=" ">
 			</text>
 		</textBlock>
-				<textBlock>
+		<textBlock>
 			<text
 			size="18.0"
 			fontFamily="System"
+			fontStyle="Bold"
+			text="Contributors">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
 			fontStyle="Regular"
-			text="">
+			text="Keely Maxwell, EPA ORD Center for Environmental Science and Emergency Response (CESER)">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Emily Eisenhauer, EPA ORD Center for Public Health and Environmental Assessment (CPHEA)">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Meridith Fry, EPA ORD CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Susan Julius, EPA ORD CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Brittany Kiessling, EPA ORD CESER">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Marissa Matsler, EPA ORD CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Lauren Oliver, EPA ORD CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Sara Romanoski, The LAB at the Office of Personnel Management">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Maggie Ollove, The LAB at the Office of Personnel Management">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Maureen Shacklette, EPA ORD Student Services Contractor">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Raven Nee, EPA ORD Oak Ridge Institute for Science and Engineering (ORISE) participant, CESER">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Siena Henson, ORISE participant in CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Jeanine Finley, EPA Office of Water">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Heidi Paulsen, EPA Office of Mission Support">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Amelia Hertzberg, EPA Office of Environmental Justice and External Civil Rights">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Rabi Kieber, EPA Region 2">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Kyle Bryant, EPA Region 4">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Ashley James, EPA Office of Water (former ORISE, Office of Children’s Health Protection (OCHP))">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Rashad Taylor, EPA Office of Water (former ORISE in OCHP)">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Lauren Dudley, ORISE in OCHP">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Laetitia Meyrueix, ORISE in OCHP">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Ian Reilly, former ORISE participant in CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Kelli Roemer, former ORISE participant in CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Paige Varner, former ORISE participant in CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Laura Sivels, former ORISE participant in CPHEA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="18.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="ORD Team Positionality Statement">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -87,19 +355,7 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="To learn more about ">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Italic"
-			text=" the science behind ERB,">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Regular"
-			text=" check out these resources:">
+			text="We, the EPA ORD’s ERB team, offer this positionality statement in an effort to make transparent the ways in which our professional roles, training, and life experiences have shaped the development of the Equitable Resilience Builder.">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -107,29 +363,7 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="Maxwell, K. (2018). A coupled human–natural systems framework of community resilience. ">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Italic"
-			text="Journal of Natural Resources Policy Research">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Regular"
-			text=" 8 (1-2): 110–130.">
-			</text>
-		</textBlock>
-		<textBlock>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Hyperlink"
-			text="https://doi.org/10.5325/naturesopolirese.8.1-2.0110"
-			linkType="URL"
-			link="https://doi.org/10.5325/naturesopolirese.8.1-2.0110">
+			text="We are a team of mostly white, female-identifying researchers in the ORD who share a passion for environmental stewardship and public service. We aim to advance environmental equity and justice as an integral part of EPA’s mission to protect human health and the environment for all Americans. We have been trained in environmental and social sciences in the United States, and we acknowledge that the legacies of our scientific disciplines such as anthropology, ecology, and urban planning include systemic racism and exclusive practices that have led to generational harm by contributing to colonial resource extraction and dispossession. As federal and civilian researchers, we work to be self-reflective about our frames of reference, seek perspectives that are different from our own, and integrate other forms of knowledge and scientific practice into our work such as indigenous science and knowledge and lived experiences of community members.">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -137,29 +371,7 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="EPA (2017). ">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Italic"
-			text="Evaluating Urban Resilience to Climate Change: A Multi-Sector Approach. ">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Regular"
-			text="Washington, D.C. EPA/600/R-16/365F.">
-			</text>
-		</textBlock>
-		<textBlock>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Hyperlink"
-			text="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NCEA&amp;dirEntryId=322482"
-			linkType="URL"
-			link="https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NCEA&amp;dirEntryId=322482">
+			text="Disasters and climate change increasingly affect all people, however most of us do not come from communities that experience the greatest vulnerability and impacts and environmental injustices. As we strive to bridge federal science and community needs to make sure our research benefits the places we work, we prioritize engagement with impacted communities and practitioners of equitable resilience to inform our work. This is an iterative process, and we continue to learn from our interactions with practitioners and leaders that are building resilience in their communities.">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -167,19 +379,39 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="To learn more about ">
+			text=" ">
 			</text>
+		</textBlock>
+		<textBlock>
 			<text
-			size="16.0"
+			size="18.0"
 			fontFamily="System"
-			fontStyle="Italic"
-			text=" how ERB was developed, ">
+			fontStyle="Bold"
+			text="Funding Support">
 			</text>
+		</textBlock>
+		<textBlock indent="40.0">
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text=" check out this article:">
+			text="ORD Homeland Security National Research Program">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="ORD Sustainable and Healthy Communities National Research Program">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="ORD High End Scientific Computing and Environmental Modeling and Visualization Lab Award">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -187,29 +419,71 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="Fry, M., K. Maxwell, E. Eisenhauer, S. Julius, B. Kiessling, M. Matsler, M. Ollove, S. Romanoski (2023). Centering equity in the development of a community resilience planning resource. ">
+			text=" ">
 			</text>
+		</textBlock>
+		<textBlock>
 			<text
-			size="16.0"
+			size="18.0"
 			fontFamily="System"
-			fontStyle="Italic"
-			text="Climate Risk Management">
+			fontStyle="Bold"
+			text="Contract support">
 			</text>
+		</textBlock>
+		<textBlock indent="40.0">
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text=" 40:100520.">
+			text="Climate Resilience Consulting">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Kim Lundgren Associates">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Adaptation International">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Environmental Modeling and Visualization Lab/ ARA">
+			</text>
+		</textBlock>
+		<textBlock indent="40.0">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Interagency Agreement with The Lab at the Office of Personnel Management">
 			</text>
 		</textBlock>
 		<textBlock>
 			<text
 			size="16.0"
 			fontFamily="System"
-			fontStyle="Hyperlink"
-			text="https://doi.org/10.1016/j.crm.2023.100520 "
-			linkType="URL"
-			link="https://doi.org/10.1016/j.crm.2023.100520 ">
+			fontStyle="Regular"
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="18.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="Disclaimer">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -217,27 +491,7 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="To learn more about ">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Italic"
-			text=" how to use ERB, ">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Regular"
-			text=" check out the User Guide.">
-			</text>
-		</textBlock>
-		<textBlock>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Regular"
-			text="EPA. 2023. Equitable Resilience Builder User Guide. Washington, D.C.: U.S. Environmental Protection Agency">
+			text="This product has been reviewed in accordance with U.S. Environmental Protection Agency (EPA) policy and approved for publication. It does not and should not be construed to represent any agency determination or policy. Mention of trade names or commercial products does not constitute endorsement or recommendation for use. Execution of any software program, and modification to system configuration files must be made at the user’s own risk. Neither the U.S. EPA nor the program author(s) can assume responsibility for program modification, content, output, interpretation, or usage. This program has been extensively tested and verified. However, as for all complex software, it may not be completely free of errors and may not be applicable for all cases. In no event will the U.S. EPA be liable for direct, indirect, special, incidental, or consequential damages arising out of the use of the program and/or associated documentation. ">
 			</text>
 		</textBlock>
 	</container>

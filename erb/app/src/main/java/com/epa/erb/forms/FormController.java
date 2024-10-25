@@ -98,7 +98,10 @@ public class FormController {
 		vBox.getChildren().add(imageView);
 		Scene scene = new Scene(vBox);
 		stage.setScene(scene);
-		imageView.fitWidthProperty().bind(vBox.widthProperty());
+		if (!enlargedId.contentEquals("120")) {
+			// 120 is a portrait scaled image. Remove if statement once we have an appropriately scaled image for 120.
+			imageView.fitWidthProperty().bind(vBox.widthProperty());
+		}
 		imageView.fitHeightProperty().bind(vBox.heightProperty());
 		stage.showAndWait();
 	}

@@ -79,7 +79,7 @@ public class ProjectSelectionController implements Initializable{
 		if (mouseEvent == null || mouseEvent.getClickCount() == 2) {
 			Project selectedProject = projectsListView.getSelectionModel().getSelectedItem();
 			loadProject(selectedProject);
-		} else if (mouseEvent.getClickCount() ==1 ) {
+		} else if (mouseEvent.getClickCount() == 1 ) {
 			Project selectedProject = projectsListView.getSelectionModel().getSelectedItem();
 			descriptionTextArea.setText(selectedProject.getProjectDescription());
 		}

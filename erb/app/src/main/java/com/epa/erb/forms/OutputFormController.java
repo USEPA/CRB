@@ -242,15 +242,19 @@ public class OutputFormController extends FormController implements Initializabl
 		for(int i =0; i < formVBox.getChildren().size(); i++) {
 			listOfChildren.add(formVBox.getChildren().get(i));
 		}
-		
+		System.out.println("here");
 		File saveLocation = fileHandler.getDataXMLFile(engagementActionController.getProject(), engagementActionController.getCurrentGoal(), engagementActionController.getCurrentSelectedERBContentItem());
+		System.out.println(saveLocation.getAbsolutePath());
 		if(!saveLocation.getParentFile().exists()) {
 			xmlManager.writeGoalMetaXML(fileHandler.getGoalMetaXMLFile(engagementActionController.getProject(), engagementActionController.getCurrentGoal()), engagementActionController.getListOfUniqueERBContentItems());
 			fileHandler.createGUIDDirectoriesForGoal2(engagementActionController.getProject(), engagementActionController.getCurrentGoal(), engagementActionController.getListOfUniqueERBContentItems());
 
 		}
+		System.out.println(saveLocation.getName());
+		System.out.println(saveLocation.getAbsolutePath());
 		xmlManager.writeOutputFormDataXML(saveLocation, listOfChildren);
 		String fileName = engagementActionController.getCurrentSelectedERBContentItem().getShortName().replaceAll(" ", "_").replaceAll(":", "_").replaceAll("-", "");
+		System.out.println(fileName);
 		File outputTextFile = new File(fileHandler.getGUIDDataDirectory(engagementActionController.getProject(), engagementActionController.getCurrentGoal())+File.separator + engagementActionController.getCurrentSelectedERBContentItem().getGuid() + File.separator + fileName + ".txt");
 		writeOutputFormToTextFile(listOfChildren,outputTextFile);
 		ExternalFileUploaderController exFileUploader = new ExternalFileUploaderController(app,engagementActionController);

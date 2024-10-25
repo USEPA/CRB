@@ -230,9 +230,9 @@ public class IndicatorRanking_VirtualController implements Initializable {
 			IndicatorCardController iCController = new IndicatorCardController(card, app);
 			fxmlLoader.setController(iCController);
 			VBox cVBox = fxmlLoader.load();
-			cVBox.setPrefWidth(70);
-			cVBox.setMaxWidth(70);
-			cVBox.setMinWidth(70);
+			cVBox.setPrefWidth(90);
+			cVBox.setMaxWidth(90);
+			cVBox.setMinWidth(90);
 			cVBox.setPrefHeight(90);
 			cVBox.setMinHeight(90);
 			cVBox.setMaxHeight(90);

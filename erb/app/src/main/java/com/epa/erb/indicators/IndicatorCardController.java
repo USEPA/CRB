@@ -131,12 +131,8 @@ public class IndicatorCardController implements Initializable{
 	}
 	
 	public void addTextForRanking() {		
-		Text indicatorTitle = new Text("\n Indicator:");
-		indicatorTitle.setFont(Font.font("System", FontWeight.BOLD, 10.0));
-		textFlow.getChildren().add(indicatorTitle);
-		
 		Text indicatorText = new Text("\n" + indicatorCard.getIndicator());
-		indicatorText.setFont(Font.font("System", FontWeight.NORMAL, 10.0));
+		indicatorText.setFont(Font.font("System", FontWeight.BOLD, 10.0));
 		textFlow.getChildren().add(indicatorText);
 	}
 	
@@ -303,7 +299,7 @@ public class IndicatorCardController implements Initializable{
 		indicatorText.setFont(Font.font("System", FontWeight.BOLD, 15.0));
 		textFlow.getChildren().add(indicatorText);
 
-		// Definintion
+		// Definition
 		Text definitionText = new Text("\n" + indicatorCard.getDefinition());
 		definitionText.setFont(Font.font("System", FontPosture.ITALIC, 12.0));
 		textFlow.getChildren().add(definitionText);
@@ -372,7 +368,7 @@ public class IndicatorCardController implements Initializable{
 		
 		textFlow.getChildren().add(indicatorText);
 		
-		//Definintion
+		//Definition
 		Text definitionText = new Text("\n" + indicatorCard.getDefinition());
 		definitionText.setFont(Font.font("System", FontPosture.ITALIC, 10.0));
 		

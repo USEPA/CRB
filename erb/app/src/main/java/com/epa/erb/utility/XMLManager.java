@@ -39,6 +39,8 @@ import javafx.scene.text.TextAlignment;
 import javafx.scene.text.TextFlow;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.geometry.Insets;
 
 public class XMLManager {
 	
@@ -264,6 +266,13 @@ public class XMLManager {
 
 								TextFlow textFlow = new TextFlow();
 								Element textBlockElement = (Element) textBlockNode;
+								String ind = textBlockElement.getAttribute("indent");
+								if (ind != null && ind.length() > 0) {
+									Double indent = Double.parseDouble(ind);
+									if (indent != null && indent > 0) {
+										textFlow.setPadding(new Insets(0.0, 0.0, 0.0, indent));
+									}
+								}
 								NodeList textBlockChildrenNodeList = textBlockElement.getChildNodes();
 								for (int l = 0; l < textBlockChildrenNodeList.getLength(); l++) {
 									Node childNode = textBlockChildrenNodeList.item(l);
@@ -288,7 +297,12 @@ public class XMLManager {
 													t.setOnMouseClicked(e -> formContentController.handleHyperlink(t,
 															linkType, link, app.getSelectedProject()));
 												} else {
-													t.setStyle("-fx-fill:#4d90bc");
+													String color = textElement.getAttribute("color");
+													if (color != null && color.length() > 0) {
+														t.setFill(Color.web(color, 1.0));
+													} else {
+														t.setFill(Color.web("#4d90bc", 1.0));
+													}
 													t.setOnMouseEntered(e -> t.setUnderline(true));
 													t.setOnMouseExited(e -> t.setUnderline(false));
 													t.setOnMouseClicked(e -> formContentController.handleHyperlink(t,
@@ -357,7 +371,12 @@ public class XMLManager {
 																			.handleHyperlink(t, linkType, link,
 																					app.getSelectedProject()));
 																} else {
-																	t.setStyle("-fx-fill:#4d90bc");
+																	String color = textElement.getAttribute("color");
+																	if (color != null && color.length() > 0) {
+																		t.setFill(Color.web(color, 1.0));
+																	} else {
+																		t.setFill(Color.web("#4d90bc", 1.0));
+																	}
 																	t.setOnMouseEntered(e -> t.setUnderline(true));
 																	t.setOnMouseExited(e -> t.setUnderline(false));
 																	t.setOnMouseClicked(e -> formContentController
@@ -477,7 +496,12 @@ public class XMLManager {
 											if (fontStyle.contentEquals("Hyperlink")) {
 												String linkType = textElement.getAttribute("linkType");
 												String link = textElement.getAttribute("link");
-												t.setStyle("-fx-fill:#4d90bc");
+												String color = textElement.getAttribute("color");
+												if (color != null && color.length() > 0) {
+													t.setFill(Color.web(color, 1.0));
+												} else {
+													t.setFill(Color.web("#4d90bc", 1.0));
+												}
 												t.setFont(Font.font(fontFamily, FontWeight.NORMAL, size));
 												t.setOnMouseEntered(e -> t.setUnderline(true));
 												t.setOnMouseExited(e -> t.setUnderline(false));
@@ -541,7 +565,12 @@ public class XMLManager {
 													if (fontStyle.contentEquals("Hyperlink")) {
 														String linkType = textElement.getAttribute("linkType");
 														String link = textElement.getAttribute("link");
-														t.setStyle("-fx-fill:#4d90bc");
+														String color = textElement.getAttribute("color");
+														if (color != null && color.length() > 0) {
+															t.setFill(Color.web(color, 1.0));
+														} else {
+															t.setFill(Color.web("#4d90bc", 1.0));
+														}
 														t.setFont(Font.font(fontFamily, FontWeight.NORMAL, size));
 														t.setOnMouseEntered(e -> t.setUnderline(true));
 														t.setOnMouseExited(e -> t.setUnderline(false));
