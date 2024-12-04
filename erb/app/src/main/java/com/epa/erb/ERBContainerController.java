@@ -71,43 +71,23 @@ public class ERBContainerController implements Initializable {
 
 	private void populateResourceMenu() {
 		for (String id : idAssignments.getResourceIdAssignments()) {
-			// FFLAG: Menu updates
-			/*
-			 * Menu toolInfoMenu = new Menu("Tool Info"); Menu erbApproachMenu = new
-			 * Menu("ERB Approach"); for (String id :
-			 * idAssignments.getToolInfoIdAssignments()) { for (ERBContentItem
-			 * erbContentItem : app.getAvailableERBContentItems()) { if
-			 * (id.equals(erbContentItem.getId())) { String name =
-			 * erbContentItem.getLongName(); MenuItem menuItem =
-			 * createMenuItem(erbContentItem.getId(), name, true);
-			 * toolInfoMenu.getItems().add(menuItem); } } } for (String id :
-			 * idAssignments.getErbApproachIdAssignments()) {
-			 */
 			for (ERBContentItem erbContentItem : app.getAvailableERBContentItems()) {
 				if (id.equals(erbContentItem.getId())) {
 					if (id.equals("201")) {
 						MenuItem menuItem = new MenuItem("Funding and Finance Guide");
 						resourcesMenu.getItems().add(menuItem);
-						// erbApproachMenu.getItems().add(menuItem);
 						File fileToOpen = new File(fileHandler.getTempDirectory() + File.separator + "Funding_and_Financing_Guide.pdf");
 						menuItem.setOnAction(e -> fileHandler.openFileOnDesktop(fileToOpen));
 					} else {
 						String name = erbContentItem.getLongName();
 						MenuItem menuItem = createMenuItem(erbContentItem.getId(), name, true);
 						resourcesMenu.getItems().add(menuItem);
-						// erbApproachMenu.getItems().add(menuItem);
 					}
 				}
 			}
 		}
-		/*
-		 * } resourcesMenu.getItems().addAll(toolInfoMenu, erbApproachMenu);
-		 */
 	}
 
-
-	// FFLAG: Menu updates
-	// Remove once menus fully change appearance.
 	private void populateFAQMenu() {
 	  for (String id : idAssignments.getFAQIdAssignments()) {
 		  for (ERBContentItem erbContentItem : app.getAvailableERBContentItems()) {
@@ -124,8 +104,6 @@ public class ERBContainerController implements Initializable {
 	  iconsMenuItem.setOnAction(e -> fController.loadImagePopUp("204")); 
 	}
 	
-	//FFLAG: Menu updates
-	// Remove once menus fully change appearance
 	private void populateAboutMenu() {
 		for (ERBContentItem erbContentItem : app.getAvailableERBContentItems()) {
 			if (idAssignments.getAboutIdAssignments().contains(erbContentItem.getId())) {

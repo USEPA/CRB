@@ -10,8 +10,6 @@ public class IdAssignments {
 	private ArrayList<String> chapterIdAssignments = new ArrayList<String>();
 	private ArrayList<String> resourceIdAssignments = new ArrayList<String>();
 	private ArrayList<String> backgroundIdAssignments = new ArrayList<String>();
-	private ArrayList<String> toolInfoIdAssignments = new ArrayList<String>();
-	private ArrayList<String> erbApproachIdAssignments = new ArrayList<String>();
 	
 	public IdAssignments() {
 		fillFAQIdAssignments();
@@ -20,8 +18,6 @@ public class IdAssignments {
 		fillChapterIdAssignemnts();
 		fillResourceIdAssignments();
 		fillBackgroundIdAssignments();
-		fillToolInfoIdAssignments();
-		fillErbApproachIdAssignments();
 	}
 	
 	public void fillFAQIdAssignments() {
@@ -50,26 +46,6 @@ public class IdAssignments {
 		iconIdAssignments.add("78");
 		iconIdAssignments.add("65");
 		iconIdAssignments.add("72");
-	}
-	
-	public void fillToolInfoIdAssignments() {
-		toolInfoIdAssignments.add("09"); // About ERB
-		toolInfoIdAssignments.add("167"); // Disclaimer
-		toolInfoIdAssignments.add("26"); // FAQ
-		toolInfoIdAssignments.add("01"); // Glossary
-		toolInfoIdAssignments.add("27"); // Example: Using ERB
-		
-	}
-	
-	public void fillErbApproachIdAssignments() {
-		erbApproachIdAssignments.add("05"); //Data Ethics
-		erbApproachIdAssignments.add("04"); //Equitable Resilience
-		erbApproachIdAssignments.add("187"); //Equity Principles for Resilience Planning
-		erbApproachIdAssignments.add("201"); //Funding and Finance Guide
-		erbApproachIdAssignments.add("06"); //Resilience Indicators
-		erbApproachIdAssignments.add("02"); //Storytelling
-		erbApproachIdAssignments.add("03"); //Trauma-Informed Engagement
-		erbApproachIdAssignments.add("10"); //Youth Engagement Guide
 	}
 	
 	public void fillAboutIdAssignments() {
@@ -128,13 +104,5 @@ public class IdAssignments {
 
 	public ArrayList<String> getBackgroundIdAssignments() {
 		return backgroundIdAssignments;
-	}
-	
-	public ArrayList<String> getErbApproachIdAssignments() {
-		return erbApproachIdAssignments;
-	}
-	
-	public ArrayList<String> getToolInfoIdAssignments() {
-		return toolInfoIdAssignments;
 	}
 }

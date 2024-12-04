@@ -424,7 +424,6 @@ public class XMLManager {
 																					size));
 																		}
 																	}
-																	System.out.println(t.getText());
 																	bTextFlow.getChildren().add(t);
 																}
 																bTextFlowVBox.getChildren().add(bTextFlow);

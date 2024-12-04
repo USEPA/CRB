@@ -237,14 +237,12 @@ public class FileHandler {
 	public void createGUIDDataDirectory(Project project, Goal goal) {
 		File GUIDDataDirectory = getGUIDDataDirectory(project, goal);
 		if (!GUIDDataDirectory.exists()) {
-			System.out.println("Making a new data directory");
 			GUIDDataDirectory.mkdir();
 		}
 	}
 
 	public void createGUIDDirectoriesForGoal2(Project project, Goal goal, ArrayList<ERBContentItem> uniqueERBContentItems) {
 		createGUIDDataDirectory(project, goal);
-		System.out.println("Creating new directories");
 		for (ERBContentItem erbContentItem : uniqueERBContentItems) {
 			createDirectory(project, goal, erbContentItem);
 		}
