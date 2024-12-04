@@ -433,10 +433,7 @@ public class EngagementActionController implements Initializable {
 					} else if (erbContentItem.getLongName().contentEquals("Indicator Center")) {
 						ScrollPane root = loadIndicatorCenterController();
 						addContentToContentVBox(root, true);
-					} else if (erbContentItem.getLongName().contentEquals("ERB Dashboard")) {
-						ScrollPane root = loadIndicatorCenterController();
-						addContentToContentVBox(root, true);
-					}
+					} else {}
 				}
 			}
 		}
@@ -494,9 +491,6 @@ public class EngagementActionController implements Initializable {
 	}
 	
 	public void addChildrenToTreeView_hasGUIDS(ERBContentItem contentItem, ERBContentItem contentItemParent, TreeItem<ERBContentItem> rootTreeItem) {
-		if (contentItem.getId().contentEquals("251")) { // ERB Dashboard is currently under construction. This acts as a feature flag to exclude it from the treeview.
-			return;
-		}
 		TreeItem<ERBContentItem> treeItem = new TreeItem<ERBContentItem>(contentItem);
 		rootTreeItem.getChildren().add(treeItem);
 		treeItemGuidTreeMap.put(contentItem, treeItem);
@@ -528,9 +522,6 @@ public class EngagementActionController implements Initializable {
 		}
 		
 		public void addChildrenToTreeView_noGUIDS(ERBContentItem contentItem, ERBContentItem contentItemParent, TreeItem<ERBContentItem> rootTreeItem) {
-			if (contentItem.getId().contentEquals("251")) { // ERB Dashboard is currently under construction. This acts as a feature flag to exclude it from the treeview.
-				return;
-			}
 			String guid = app.generateGUID();
 			contentItem.setGuid(guid);
 			TreeItem<ERBContentItem> treeItem = new TreeItem<ERBContentItem>(contentItem);
