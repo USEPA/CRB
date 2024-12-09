@@ -242,7 +242,6 @@ public class OutputFormController extends FormController implements Initializabl
 		for(int i =0; i < formVBox.getChildren().size(); i++) {
 			listOfChildren.add(formVBox.getChildren().get(i));
 		}
-		
 		File saveLocation = fileHandler.getDataXMLFile(engagementActionController.getProject(), engagementActionController.getCurrentGoal(), engagementActionController.getCurrentSelectedERBContentItem());
 		if(!saveLocation.getParentFile().exists()) {
 			xmlManager.writeGoalMetaXML(fileHandler.getGoalMetaXMLFile(engagementActionController.getProject(), engagementActionController.getCurrentGoal()), engagementActionController.getListOfUniqueERBContentItems());

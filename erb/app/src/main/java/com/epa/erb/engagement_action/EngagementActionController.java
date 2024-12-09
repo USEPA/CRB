@@ -82,9 +82,13 @@ public class EngagementActionController implements Initializable {
 	@FXML
 	VBox engagementVBox, treeViewVBox, mainVBox,contentVBox;
 	@FXML
-	MenuBar projectMenuBar;
-	@FXML
-	Menu projectFilesMenu, progressTrackerMenu;
+	Button worksheetIndexButton, myPortfolioButton, uploadFileButton;
+	
+	
+	@FXML MenuBar projectMenuBar;
+	  
+	@FXML Menu projectFilesMenu, progressTrackerMenu;
+	 
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -97,7 +101,7 @@ public class EngagementActionController implements Initializable {
 		if(!project.getProjectName().contentEquals("Explore")) {
 			engagementVBox.getChildren().remove(exploreModeLabel);
 		}
-		populateProjectMenuBar();
+		// populateProjectMenuBar();
 	}
 
 	private void initFacilitatorMode() {
@@ -107,18 +111,20 @@ public class EngagementActionController implements Initializable {
 		removeSaveHBox();
 	}
 	
-	private void populateProjectMenuBar() {
+	
+	void populateProjectMenuBar() {
 		MenuItem miMyPortfolio = new MenuItem("My Portfolio");
 		miMyPortfolio.setOnAction(e -> myPortfolioButtonAction());
-		
+		  
 		MenuItem miUploadFiles = new MenuItem("Upload Files");
 		miUploadFiles.setOnAction(e -> externalDocUploadButtonAction());
-		
+		  
 		MenuItem miReport = new MenuItem("Generate Summary Report");
 		miReport.setOnAction(e -> finalReportButtonAction());
-		
-		projectFilesMenu.getItems().addAll(miMyPortfolio, miUploadFiles, miReport);
+			  
+		// projectFilesMenu.getItems().addAll(miMyPortfolio, miUploadFiles, miReport);
 	}
+		 
 	
 	@FXML
 	public void mappingButtonAction() {
@@ -427,10 +433,7 @@ public class EngagementActionController implements Initializable {
 					} else if (erbContentItem.getLongName().contentEquals("Indicator Center")) {
 						ScrollPane root = loadIndicatorCenterController();
 						addContentToContentVBox(root, true);
-					} else if (erbContentItem.getLongName().contentEquals("ERB Dashboard")) {
-						ScrollPane root = loadIndicatorCenterController();
-						addContentToContentVBox(root, true);
-					}
+					} else {}
 				}
 			}
 		}

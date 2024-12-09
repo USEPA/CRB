@@ -1,10 +1,10 @@
-<textBlocks>
+<!-- Add XML Data --><textBlocks>
 	<container id="formVBox">
-		<textBlock>
+		<textBlock alignment="center">
 			<text
 			size="22.0"
 			fontFamily="System"
-			fontStyle="Bold"
+			fontStyle="Bold-underlined"
 			text="What is a Trauma-Informed Approach?">
 			</text>
 		</textBlock>
@@ -21,10 +21,10 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="A trauma-informed approach to equitable resilience planning recognizes that individuals experience climate change and hazards differently and emphasizes trust, safety, history, and relationship building to avoid re-traumatization.">
+			text="A trauma-informed approach to equitable resilience planning realizes the widespread impact of trauma, recognizes the signs and symptoms of trauma, and responds by emphasizing trust, safety, history, and relationship building to avoid re-traumatization [1]. Understanding how traumatic experiences may affect community engagement is important for successful resilience planning.">
 			</text>
 		</textBlock>
-				<textBlock>
+		<textBlock>
 			<text
 			size="18.0"
 			fontFamily="System"
@@ -33,8 +33,132 @@
 			</text>
 		</textBlock>
 		<textBlock>
+			<borderBlock background="#BDD6EE" border="1.0">
+				<borderTextBlock>
+					<text
+					size="18.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="Guide outline:">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	What is Trauma?">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	Types of Trauma">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	How the Brain Responds to Trauma">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	How Does Trauma Impact Community Engagement?">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	Adopting a Trauma-Informed Approach to Community Engagement">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	References">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="18.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="When to use this guide:">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="This guide can be applied throughout all engagement and is strongly recommended when engaging with communities.">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;Suggested Activities:">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	Hazards Storytelling">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	Participatory Mapping">
+					</text>
+				</borderTextBlock>
+				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#009;•	Equity Discussions">
+					</text>
+				</borderTextBlock>
+			</borderBlock>
+		</textBlock>
+		<textBlock>
 			<text
-			size="18.0"
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="20.0"
 			fontFamily="System"
 			fontStyle="Bold"
 			text="What is Trauma?">
@@ -45,7 +169,7 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="Communities and individuals might have experienced trauma that can impact resilience planning efforts. According to the U.S. Substance Abuse and Mental Health Services Agency (SAMHSA), ">
+			text="Communities and individuals may have experienced trauma that can affect their experience with resilience planning efforts. According to the U.S. Substance Abuse and Mental Health Services Agency (SAMHSA), ">
 			</text>
 			<text
 			size="16.0"
@@ -57,15 +181,21 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text=" is an event or series of events experienced as harmful or life-threatening that has persistent adverse effects on individual functioning, and mental, physical, social, emotional, or spiritual well-being [1]. That trauma may include the emotional toll of disaster on survivors, as well as experiences of marginalization and discrimination.">
+			text=" is an event or series of events experienced as harmful or life-threatening that has persistent adverse effects on individual functioning, and mental, physical, social, emotional, or spiritual well-being. Trauma may result from individual events like disasters, as well as from prolonged experiences, like marginalization and discrimination [1]. ">
 			</text>
 		</textBlock>
-				<textBlock>
+		<textBlock>
 			<text
-			size="18.0"
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="Trauma">
+			</text>
+			<text
+			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="">
+			text=" starts with an event and the individual’s experience of that event. Experiences of an event often vary widely – a particular event may be traumatic for some individuals and not for others. An individual’s experience can lead to both physical and psychological impacts. Physical impacts include impaired immune response, neurodevelopment, early adolescence, hypersensitive stress response, and epigenetic changes [1]. Psychological effects can be impaired behavioral or emotional regulation, difficulty trusting, and impaired judgement [1, 2].">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -73,7 +203,156 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="Planning for community resilience needs to acknowledge trauma and minimize the potential for re-traumatization as much as possible. This requires adopting a ">
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock alignment="center">
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="The Three E’s of Trauma">
+			</text>
+		</textBlock>
+		<textBlock alignment="center">
+			<icon
+			width="800.0"
+			height="436.0"
+			id="257">
+			</icon>
+		</textBlock>
+		<textBlock alignment="center">
+			<text
+			size="14.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="Figure 1: The Three E's of Trauma [1, 3]">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="20.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="Types of Trauma">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="There are many different types of trauma. The table below lists different types of trauma, who they impact, and examples of traumatic events under each category. For resilience planning, it’s important to understand chronic versus acute trauma. Acute trauma can be caused by a single event or disaster. Storms, flooding, domestic terror, wildfires, or other catastrophic events can all lead to trauma, particularly when paired with existing inequities or lack of resources. However strong networks of support and resources may help disaster victims cope and lessen the experience of trauma. Chronic trauma is experienced over a long period of time from repeated events or on-going stressors that can include poverty, violence, discrimination, or environmental degradation [2, 4]. Trauma can even be transmitted across generations within families or communities, such as Indigenous groups that experienced historical repression [5]. ">
+			</text>
+		</textBlock>
+		<textBlock alignment="center">
+			<icon
+			width="800.0"
+			height="436.0"
+			id="258">
+			</icon>
+		</textBlock>
+		<textBlock alignment="center">
+			<text
+			size="14.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="Table 1: Types of trauma, definitions, and examples [1, 2, 3].">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="20.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="How the Brain Responds to Trauma">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Understanding how the brain responds to stressful events can help with understanding how stressors and traumatic events impact individuals and influence their behaviors during and after an emergency. ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<icon
+			width="200.0"
+			height="109.0"
+			id="259">
+			</icon>
+		</textBlock>
+		<textBlock>
+			<text
+			size="14.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="Figure 2: Brain's response to traumatic events [3]">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="The human brain’s information processing design optimizes physical and psychological response times. Sensory information travels from areas of the brain capable of taking the most immediate, radical response up to areas responsible for the most considered and calm responses. Information and events which put the brain in a state of terror, fear, and alarm trigger the use of predominantly reflexive, reactive, and emotional responses. Individuals who have experienced trauma may have a hypersensitive stress response and/or triggers that increases the types of sensory information that will put them into a state of terror or fear. This can lead them to less than optimal responses [1, 4, 3, 6].">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="In an emergency, regardless of trauma, both survivors and responders likely will be under a great deal of stress. Being able to manage that stress effectively and maintain a calm and/or alert state of mind will enable individuals to make the most situation-appropriate decisions. Using trauma-informed approaches can help both the survivor and responder attain and maintain a calmer state of mind [1, 6, 7].">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="20.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="How Does Trauma Impact Community Engagement?">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Understanding and acknowledging the types and sources of trauma that communities have experienced goes a long way to building trust and improving engagement [8]. Communities that have been forced to be self-reliant or experienced a history of broken promises or exploitation, may be distrustful or not willing to engage [6]. The same communities that have experienced chronic and generational trauma from historic practices such as redlining, gentrification, or housing discrimination are often more vulnerable to acute events such as floods [9]. Disasters can compound traumatic experiences – adding an acute impact to existing historic trauma(s) [6, 10]. Additionally, bias in emergency management, such as lack of investment in preparedness and protection for low-income communities or greater relief funding for wealthier communities contributes to disproportionate disaster impacts is integral to furthering disaster equity [10]. When practitioners understand the historic downfalls of resilience planning, then they can better avoid those pitfalls and barriers.">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Community members who have experienced trauma (whether acute or chronic) may be unable or unwilling to engage in discussions about resilience due to emotional impact, burnout, lack of trust in local officials, or other reasons [6]. Communities may have experienced harm from past disasters or disaster relief actions (acute) or the on-going effects of disasters or marginalization such as being left out of engagement efforts altogether (chronic). Planning for community resilience needs to acknowledge trauma and create the conditions for community members to be able to participate so that their needs and vision are included. This requires adopting a ">
 			</text>
 			<text
 			size="16.0"
@@ -88,12 +367,20 @@
 			text=" when engaging with communities in resilience and recovery planning.">
 			</text>
 		</textBlock>
-				<textBlock>
+		<textBlock>
 			<text
-			size="18.0"
+			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="">
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="20.0"
+			fontFamily="System"
+			fontStyle="Bold"
+			text="Adopting a Trauma-Informed Approach to Community Engagement">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -105,13 +392,13 @@
 		</textBlock>
 		<textBlock>
 			<text
-			size="10.0"
+			size="14.0"
 			fontFamily="System"
 			fontStyle="Italic"
-			text="Figure 1 Six principles to guide a trauma-informed approach, adapted from [2].">
+			text="Figure 3: Six principles to guide a trauma-informed approach, adapted from [11].">
 			</text>
 		</textBlock>
-				<textBlock>
+		<textBlock>
 			<text
 			size="18.0"
 			fontFamily="System"
@@ -148,7 +435,7 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="to reduce the impact of trauma through collaborative community processes [2-4]. This approach involves:">
+			text="to reduce the impact of trauma through collaborative community processes [6, 7, 11]. This approach involves:">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -207,7 +494,23 @@
 			text="&#009;•	Establishing follow-up protocols so communities can access additional resources">
 			</text>
 		</textBlock>
-				<textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="&#009;•	Being transparent about how discussions and information will be used and shared with others">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="&#009;•	Communicating progress on the goals of the effort and opportunities for future engagement ">
+			</text>
+		</textBlock>
+		<textBlock>
 			<text
 			size="18.0"
 			fontFamily="System"
@@ -220,20 +523,36 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="The Equitable Resilience Builder encourages a trauma-informed approach throughout the community planning process. For example, this means understanding historical context or working with an advisory board before engaging a community or ensuring a facilitator is trained in trauma-informed and justice approaches. Activities included in the ERB sections, such as storytelling, provide space and opportunity to build trust and empathy, and integrate these understandings into equitable resilience planning efforts.">
-			</text>
-		</textBlock>
-				<textBlock>
-			<text
-			size="18.0"
-			fontFamily="System"
-			fontStyle="Regular"
-			text="">
+			text="The Equitable Resilience Builder encourages a trauma-informed approach throughout the community planning process in order to engage community members in ways that are sensitive to their concerns and promote community building. Being sensitive to community members’ previous experiences can help avoid the potential for retraumatizing that may happen if constituents feel unheard or that the priorities under discussion are at odds with their own needs. People may go through the same event and have different experiences, so it is important to recognize that when engaging communities there can be divergent narratives and priorities, and it is important to not make assumptions. Having facilitators trained in trauma-informed approaches and conflict resolution may help in particularly sensitive situations [8]. ">
 			</text>
 		</textBlock>
 		<textBlock>
 			<text
-			size="18.0"
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Generally, understanding the historical context of a community and working with a core team that includes people with deep community experience can help avoid many pitfalls. ERB activities such as storytelling include methods for creating a welcoming and respectful space, listening to community voices, and integrating these understandings into equitable resilience planning efforts. Although storytelling and participatory methods of local knowledge gathering can be inclusive ways to engage diverse constituents, it is also important to know that some people will not want to participate and that is ok. If that is the case it may be necessary to discuss other ways to get input and accomplish shared goals. ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Finally, being transparent and setting clear expectations are critical for building trust and maintaining involvement. Community members should know what the project goals are, how their participation will help achieve those goals, and what the next steps are. Following through and establishing communication channels for continued engagement and sharing progress can help those who have experienced trauma to feel a sense of efficacy and regain a sense control that is often disrupted by traumatic events.  ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text=" ">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="20.0"
 			fontFamily="System"
 			fontStyle="Bold"
 			text="References">
@@ -244,27 +563,27 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="[1] SAMHSA. 2022. ">
+			text="[1] Substance Abuse and Mental Health Services Administration (SAMHSA). ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Italic"
-			text="Trauma and Violence">
+			text="SAMHSA’s Concept of Trauma and Guidance for a Trauma-Informed Approach. ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text=". Washington, D.C.: Substance Abuse and Mental Health Services Administration. ">
+			text="HHS Publication No. (SMA) 14-4884. Rockville, MD: Substance Abuse and Mental Health Services Administration, 2014. ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Hyperlink"
-			text="https://www.samhsa.gov/trauma-violence"
+			text="https://store.samhsa.gov/product/samhsas-concept-trauma-and-guidance-trauma-informed-approach/sma14-4884 "
 			linkType="URL"
-			link="https://www.samhsa.gov/trauma-violence">
+			link="https://store.samhsa.gov/product/samhsas-concept-trauma-and-guidance-trauma-informed-approach/sma14-4884 ">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -272,27 +591,27 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="[2] Centers for Disease Control and Prevention. 2020. ">
+			text="[2] Falkenburger, E., Arena, O., and Wolin, J. (2018) ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Italic"
-			text="Six Principles of a Trauma-Informed Approach">
+			text="Trauma-informed community building and engagement. ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text=". Atlanta, GA: Centers for Disease Control and Prevention. ">
+			text="Urban Institute. Metropolitan Housing and Communities Policy Center. ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Hyperlink"
-			text="https://www.cdc.gov/orr/infographics/6_principles_trauma_info.htm"
+			text="https://www.urban.org/research/publication/trauma-informed-community-building-and-engagement"
 			linkType="URL"
-			link="https://www.cdc.gov/orr/infographics/6_principles_trauma_info.htm">
+			link="https://www.urban.org/research/publication/trauma-informed-community-building-and-engagement">
 			</text>
 		</textBlock>
 		<textBlock>
@@ -300,19 +619,107 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="[3] Njenga. 2021. ">
+			text="[3] Eisenhauer, E., A. Hertzberg, M. Martin, R. Nee, K. Maxwell, M. Fry, S. Henson, S. Julius, B. Kiessling, Annie Matsler, L. Oliver, I. Reilly, AND M. Shacklette. Trauma-Informed Storytelling Activities for Community Engagement. Natural Hazards Workshop, Washington, DC, July 14 - 17, 2024. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=362392&#38;Lab=CPHEA&#38;simplesearch=0&#38;showcriteria=2&#38;sortby=pubDate&#38;searchall=eisenhauer&#38;timstype=&#38;datebeginpublishedpresented=09/30/2022"
+			linkType="URL"
+			link="https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=362392&#38;Lab=CPHEA&#38;simplesearch=0&#38;showcriteria=2&#38;sortby=pubDate&#38;searchall=eisenhauer&#38;timstype=&#38;datebeginpublishedpresented=09/30/2022">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="[4] Eisenman, D., McCaffrey, S., Donatello, I., &#38; Marshal, G. (2015). An ecosystems and vulnerable populations perspective on solastalgia and psychological distress after a wildfire. Ecohealth, 12, 602–610. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="https://doi.org/10.1007/s10393-015-1052-1"
+			linkType="URL"
+			link="https://doi.org/10.1007/s10393-015-1052-1">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="[5] O’Neill, L., Fraser, T., Kitchenham, A. et al. Hidden Burdens: a Review of Intergenerational, Historical and Complex Trauma, Implications for Indigenous Families. ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Italic"
-			text="Unearthing Stories: Considering Perspectives of Trauma Survivors">
+			text="Journ Child Adol ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text=". Winnipeg, Manitoba, Canada: Narratives Inc. ">
+			text="Trauma 11, 173–186 (2018). ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="https://doi.org/10.1007/s40653-016-0117-9"
+			linkType="URL"
+			link="https://doi.org/10.1007/s40653-016-0117-9">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="[6] Rosenberg, Errett, and Eisenman. 2022. Working with disaster-Affected communities to envision healthier futures: A trauma-informed approach to post-disaster recovery planning. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="Environmental Research and Public Health. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="19(3): 1723. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="https://doi.org/10.3390/ijerph19031723"
+			linkType="URL"
+			link="https://doi.org/10.3390/ijerph19031723">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="[7] Njenga. 2021. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="Unearthing Stories: Considering Perspectives of Trauma Survivors. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Winnipeg, Manitoba, Canada: Narratives Inc. ">
 			</text>
 			<text
 			size="16.0"
@@ -328,27 +735,97 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text="[4] Rosenberg, Errett, and Eisenman. 2022. Working with disaster-Affected communities to envision healthier futures: A trauma-informed approach to post-disaster recovery planning ">
+			text="[8] Eisenhauer E, Henson S, Matsler M, Maxwell K, Reilly I, Shacklette M, Julius S, Kiessling B, Fry M, Nee R, Bryant K, Finley J, Kieber R. (Forthcoming). ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Italic"
-			text="Environmental Research and Public Health">
+			text="Building Equitable Resilience: Lessons learned from community case studies.">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="[9] Eisenhauer, E. AND J. Finley. (2023). ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="Equitable Resilience to Flooding: A resource for practitioners on understanding economic, health, and social vulnerabilities and inequities in response and recovery. ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Regular"
-			text=". 19(3): 1723. ">
+			text="U.S. Environmental Protection Agency, Washington, DC, EPA/600/R-23/214. ">
 			</text>
 			<text
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Hyperlink"
-			text="https://doi.org/10.3390/ijerph19031723"
+			text="https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=359626&#38;Lab=CPHEA"
 			linkType="URL"
-			link="https://doi.org/10.3390/ijerph19031723">
+			link="https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=359626&#38;Lab=CPHEA">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="[10] I-DIEM. (2024). ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="MUTED: Climate Marginalization in America. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Institute for Diversity and Inclusion in Emergency Management (I-DIEM). ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="https://i-diem.org/muted/"
+			linkType="URL"
+			link="https://i-diem.org/muted/">
+			</text>
+		</textBlock>
+		<textBlock>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="[11] Centers for Disease Control and Prevention. 2020. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Italic"
+			text="Six Principles of a Trauma-Informed Approach. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Regular"
+			text="Atlanta, GA: Centers for Disease Control and Prevention. ">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="https://stacks.cdc.gov/view/cdc/56843 "
+			linkType="URL"
+			link="https://stacks.cdc.gov/view/cdc/56843 ">
 			</text>
 		</textBlock>
 	</container>

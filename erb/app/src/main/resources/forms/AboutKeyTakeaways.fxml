@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<ScrollPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <VBox fx:id="root" spacing="20.0" style="-fx-background-color: white;">
          <padding>
@@ -103,7 +103,7 @@
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <Hyperlink onAction="#myPortfolioHyperlinkAction" text="MyPortfolio">
+                        <Hyperlink onAction="#myPortfolioHyperlinkAction" text="MyPortfolio" textFill="#4d90bc">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -127,7 +127,7 @@
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <Hyperlink onAction="#reportWidgetButtonAction" text="report widget.">
+                        <Hyperlink onAction="#reportWidgetButtonAction" text="report widget." textFill="#4c90ba">
                            <font>
                               <Font size="18.0" />
                            </font>

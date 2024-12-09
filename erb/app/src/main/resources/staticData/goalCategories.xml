@@ -1,7 +1,6 @@
 <goalCategories>
 	<goalCategory categoryName="All activities">
 		<contents>
-			<content id="251"/>
 			<content id="15">
 				<content id="30"/>
 				<content id="199"/>
