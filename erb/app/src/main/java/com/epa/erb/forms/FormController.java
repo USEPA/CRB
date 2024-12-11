@@ -1,10 +1,15 @@
 package com.epa.erb.forms;
 
 import java.awt.Desktop;
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.imageio.ImageIO;
+
 import com.epa.erb.App;
 import com.epa.erb.ERBContentItem;
 import com.epa.erb.ERBItemFinder;
@@ -28,6 +33,7 @@ import javafx.scene.input.ContextMenuEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
@@ -85,25 +91,36 @@ public class FormController {
 		stage.setTitle("ERB: Equitable Resilience Builder");
 		VBox vBox = new VBox();
 		vBox.setAlignment(Pos.CENTER);
+		
+		double width = 0.0;
+		double height = 0.0;
+		
 		ImageView imageView = new ImageView();
 		String enlargedId = getEnlargedId(imageId);
 		String resourcePath = fileHandler.getIconFilePathFromResources(enlargedId);
 		Image imageToLoad = new Image(getClass().getResource(resourcePath).toString(), true);
-		double width = imageToLoad.getWidth();
-		double height = imageToLoad.getHeight();
+		BufferedImage image = null;
+		try {
+			image = ImageIO.read(getClass().getResource(resourcePath));
+			width = image.getWidth();
+			height = image.getHeight();
+		} catch (IOException e) {
+		}
+		
 		imageView.setImage(imageToLoad);
 		imageView.setFitWidth(width);
 		imageView.setFitHeight(height);
 
 		vBox.getChildren().add(imageView);
+		vBox.setPrefWidth(width);
+		vBox.setPrefHeight(height);
+		
 		Scene scene = new Scene(vBox);
 		stage.setScene(scene);
-		if (!enlargedId.contentEquals("120")) {
-			// 120 is a portrait scaled image. Remove if statement once we have an appropriately scaled image for 120.
-			imageView.fitWidthProperty().bind(vBox.widthProperty());
-		}
+
+		imageView.fitWidthProperty().bind(vBox.widthProperty());
 		imageView.fitHeightProperty().bind(vBox.heightProperty());
-		stage.showAndWait();
+		stage.showAndWait();	
 	}
 
 	private String getEnlargedId(String id) {
@@ -133,6 +150,8 @@ public class FormController {
 			return "119";
 		}else if (id.contentEquals("205")) {
 			return "206";
+		}else if(id.contentEquals("259")) {
+			return "261";
 		}
 		return id;
 	}

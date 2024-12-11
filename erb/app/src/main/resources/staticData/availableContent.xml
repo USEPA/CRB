@@ -7,7 +7,7 @@
 	<content id="06" guid="" type="mainForm" status="ready" shortName="Resilience Indicators" longName="Resilience Indicators" />
 	<content id="09" guid="" type="mainForm" status="ready" shortName="About ERB" longName="About ERB" />
 	<content id="10" guid="" type="mainForm" status="ready" shortName="Youth Engagement Guide" longName="Youth Engagement Guide" />
-	<content id="11" guid="" type="mainForm" status="ready" shortName="Supporting materials" longName="Supporting Materials" />
+	<content id="11" guid="" type="mainForm" status="ready" shortName="Supporting Materials" longName="Supporting Materials" />
 	<content id="13" guid="" type="mainForm" status="ready" shortName="Indicator Card Sorting" longName="Indicator Card Sorting" />
 	<content id="15" guid="" type="mainForm" status="ready" shortName="Plan" longName="Plan Your Project" />
 	<content id="16" guid="" type="mainForm" status="ready" shortName="Engage" longName="Engage Your Community" />
@@ -130,5 +130,5 @@
 	<content id="248" guid="" type="supportingDoc" status="ready" shortName="Workshop_1_Facilitators_Guide.docx" longName="Workshop 1 Facilitators Guide" />
 	<content id="249" guid="" type="supportingDoc" status="ready" shortName="Workshop_2_Facilitators_Guide.docx" longName="Workshop 2 Facilitators Guide" />
 	<content id="250" guid="" type="supportingDoc" status="ready" shortName="Workshop_3_Facilitators_Guide.docx" longName="Workshop 3 Facilitators Guide" />
-
+	<content id="260" guid="" type="mainForm" status="ready" shortName="Funding and Finance Guide" longName="Funding and Finance Guide" />
 </content_xmls>
