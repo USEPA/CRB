@@ -73,16 +73,17 @@ public class ERBContainerController implements Initializable {
 		for (String id : idAssignments.getResourceIdAssignments()) {
 			for (ERBContentItem erbContentItem : app.getAvailableERBContentItems()) {
 				if (id.equals(erbContentItem.getId())) {
-					if (id.equals("201")) {
-						MenuItem menuItem = new MenuItem("Funding and Finance Guide");
-						resourcesMenu.getItems().add(menuItem);
-						File fileToOpen = new File(fileHandler.getTempDirectory() + File.separator + "Funding_and_Financing_Guide.pdf");
-						menuItem.setOnAction(e -> fileHandler.openFileOnDesktop(fileToOpen));
-					} else {
+//					if (id.equals("201")) {
+//						MenuItem menuItem = new MenuItem("Funding and Finance Guide");
+//						resourcesMenu.getItems().add(menuItem);
+//						File fileToOpen = new File(fileHandler.getTempDirectory() + File.separator + "Funding_and_Financing_Guide.pdf");
+//						menuItem.setOnAction(e -> fileHandler.openFileOnDesktop(fileToOpen));
+//					} 
+//					else {
 						String name = erbContentItem.getLongName();
 						MenuItem menuItem = createMenuItem(erbContentItem.getId(), name, true);
 						resourcesMenu.getItems().add(menuItem);
-					}
+//					}
 				}
 			}
 		}
@@ -98,10 +99,10 @@ public class ERBContainerController implements Initializable {
 			  }
 		  }
 	  }
-	  MenuItem iconsMenuItem = new MenuItem("Centering Equity Icons");
-	  iconsMenuItem.setId("204");
-	  FormController fController = new FormController(app, app.getEngagementActionController());
-	  iconsMenuItem.setOnAction(e -> fController.loadImagePopUp("204")); 
+//	  MenuItem iconsMenuItem = new MenuItem("Centering Equity Icons");
+//	  iconsMenuItem.setId("204");
+//	  FormController fController = new FormController(app, app.getEngagementActionController());
+//	  iconsMenuItem.setOnAction(e -> fController.loadImagePopUp("204")); 
 	}
 	
 	private void populateAboutMenu() {
