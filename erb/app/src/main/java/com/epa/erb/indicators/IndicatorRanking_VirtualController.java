@@ -182,8 +182,9 @@ public class IndicatorRanking_VirtualController implements Initializable {
 	
 	@FXML
 	public void quadrantButtonAction() {
-		Optional<ButtonType> result = showNoSaveWarning();
-		if(result.get() == ButtonType.OK) {
+//		Optional<ButtonType> result = showNoSaveWarning();
+//		if(result.get() == ButtonType.OK) {
+		saveButtonAction();
 		try {
 			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/indicators/IndicatorSorting_Virtual.fxml"));
 			IndicatorSorting_VirtualController iSV = new IndicatorSorting_VirtualController(app, getIndicatorCardsInRanked(), this);
@@ -202,7 +203,7 @@ public class IndicatorRanking_VirtualController implements Initializable {
 			logger.log(Level.SEVERE, "Failed to load IndicatorSorting_Virtual.fxml: " + e.getMessage());
 		}
 		iSVC.getVirtualIndicatorRankingStage().close();
-	}
+//	}
 	}
 	
 	@FXML

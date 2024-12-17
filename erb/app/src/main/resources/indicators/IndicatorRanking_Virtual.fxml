@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vBox" prefHeight="456.0" prefWidth="936.0" spacing="10.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="vBox" prefHeight="456.0" prefWidth="936.0" spacing="10.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox alignment="CENTER">
          <children>
@@ -73,7 +73,7 @@
          <children>
             <HBox HBox.hgrow="ALWAYS">
                <children>
-                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonAction" stylesheets="@../button.css" text="Save">
+                  <Button fx:id="saveButton" disable="true" mnemonicParsing="false" onAction="#saveButtonAction" stylesheets="@../button.css" text="Save" visible="false">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -82,7 +82,7 @@
             </HBox>
             <HBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
                <children>
-                  <Button mnemonicParsing="false" onAction="#quadrantButtonAction" stylesheets="@../button.css" text="Continue to quadrant sorting" />
+                  <Button mnemonicParsing="false" onAction="#quadrantButtonAction" stylesheets="@../button.css" text="Save and continue to quadrant sorting" />
                </children>
             </HBox>
          </children>
