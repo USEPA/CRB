@@ -49,10 +49,11 @@ public class App extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		logger = new MyLogger(App.class.getName());
 
 		setupERBFileDirectory();
 		
+		logger = new MyLogger(App.class.getName());
+
 		sizeScreen(getScreenResolution(), getScreenSize());
 		readAndStoreData();
 		createExploreProject();
