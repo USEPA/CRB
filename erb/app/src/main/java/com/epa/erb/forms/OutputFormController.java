@@ -81,6 +81,8 @@ public class OutputFormController extends FormController implements Initializabl
 			fxmlLoader.setController(controller);
 			Parent root = fxmlLoader.load();
 			Stage stage = new Stage();
+			stage.setWidth(app.getPopUpPrefWidth());
+			stage.setHeight(app.getPopUpPrefHeight());
 			stage.getIcons().add(new Image("/bridge_tool_logo.png"));
 			stage.setTitle("About Key Takeaways");
 			Scene scene = new Scene(root);
