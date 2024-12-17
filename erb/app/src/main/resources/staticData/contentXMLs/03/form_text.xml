@@ -34,118 +34,156 @@
 		</textBlock>
 		<textBlock>
 			<borderBlock background="#BDD6EE" border="1.0">
-				<borderTextBlock>
 					<text
 					size="18.0"
 					fontFamily="System"
-					fontStyle="Regular"
+					fontStyle="Bold"
 					text="Guide outline:">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	What is Trauma?">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	Types of Trauma">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	How the Brain Responds to Trauma">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	How Does Trauma Impact Community Engagement?">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	Adopting a Trauma-Informed Approach to Community Engagement">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	References">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
-					text="">
+					text="&#xD;">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
 					<text
 					size="18.0"
 					fontFamily="System"
-					fontStyle="Regular"
+					fontStyle="Bold"
 					text="When to use this guide:">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="This guide can be applied throughout all engagement and is strongly recommended when engaging with communities.">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;Suggested Activities:">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	Hazards Storytelling">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	Participatory Mapping">
 					</text>
-				</borderTextBlock>
-				<borderTextBlock>
+					<text
+					size="16.0"
+					fontFamily="System"
+					fontStyle="Regular"
+					text="&#xD;">
+					</text>
 					<text
 					size="16.0"
 					fontFamily="System"
 					fontStyle="Regular"
 					text="&#009;•	Equity Discussions">
 					</text>
-				</borderTextBlock>
 			</borderBlock>
 		</textBlock>
 		<textBlock>
