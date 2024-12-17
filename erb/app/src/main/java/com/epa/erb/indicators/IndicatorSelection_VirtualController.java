@@ -40,17 +40,18 @@ public class IndicatorSelection_VirtualController implements Initializable {
 	private FileHandler fileHandler;
 	private IndicatorWorkbookParser iWP;
 	private ArrayList<CheckBox> selectedCheckBoxes = new ArrayList<CheckBox>();
-	
+
 	private App app;
 	private IndicatorCenterController iCC;
+
 	public IndicatorSelection_VirtualController(App app, IndicatorCenterController iCC) {
 		this.app = app;
 		this.iCC = iCC;
-		
+
 		logger = app.getLogger();
 		fileHandler = new FileHandler(app);
 	}
-	
+
 	@FXML
 	VBox vBox;
 	@FXML
@@ -67,7 +68,7 @@ public class IndicatorSelection_VirtualController implements Initializable {
 	private void initWBParser() {
 		File indicatorWorkbookFile = new File(fileHandler.getSupportingDOCDirectory(app.getSelectedProject(),
 				app.getEngagementActionController().getCurrentGoal()) + File.separator + "Indicators_List.xlsx");
-		iWP = new IndicatorWorkbookParser(app,indicatorWorkbookFile);
+		iWP = new IndicatorWorkbookParser(app, indicatorWorkbookFile);
 	}
 
 	private void fillIndicatorVBox() {
@@ -75,19 +76,22 @@ public class IndicatorSelection_VirtualController implements Initializable {
 		ArrayList<String> selectedIndicatorIds = iSDP.getSavedSelectedIndicatorIds_Virtual();
 		for (IndicatorCard iC : iWP.parseForIndicatorCards()) {
 			try {
-				FXMLLoader fxmlLoader = new FXMLLoader(
-						getClass().getResource("/indicators/IndicatorSelector_Virtual.fxml"));
-				IndicatorSelector_VirtualController iSV = new IndicatorSelector_VirtualController();
-				fxmlLoader.setController(iSV);
-				HBox root = fxmlLoader.load();
-				CheckBox cBox = iSV.getIndicatorCheckBox();
-				cBox.setId(iC.getId());
-				cBox.setOnAction(e -> checkBoxSelected(cBox));
-				cBox.setText(iC.getSystem() + " - " + iC.getIndicator());
-				if (selectedIndicatorIds != null && selectedIndicatorIds.contains(iC.getId())) {
-					cBox.setSelected(true);
+				if (!iC.getIndicator().toLowerCase().contentEquals("[add your own indicator here]")) {
+
+					FXMLLoader fxmlLoader = new FXMLLoader(
+							getClass().getResource("/indicators/IndicatorSelector_Virtual.fxml"));
+					IndicatorSelector_VirtualController iSV = new IndicatorSelector_VirtualController();
+					fxmlLoader.setController(iSV);
+					HBox root = fxmlLoader.load();
+					CheckBox cBox = iSV.getIndicatorCheckBox();
+					cBox.setId(iC.getId());
+					cBox.setOnAction(e -> checkBoxSelected(cBox));
+					cBox.setText(iC.getSystem() + " - " + iC.getIndicator());
+					if (selectedIndicatorIds != null && selectedIndicatorIds.contains(iC.getId())) {
+						cBox.setSelected(true);
+					}
+					indicatorVBox.getChildren().add(root);
 				}
-				indicatorVBox.getChildren().add(root);
 			} catch (Exception e) {
 				logger.log(Level.SEVERE, "Failed to load IndicatorSelector_Virtual.fxml: " + e.getMessage());
 			}
@@ -139,101 +143,104 @@ public class IndicatorSelection_VirtualController implements Initializable {
 		File indicatorsDir = createIndicatorsDir();
 		File virtualCardSelectionFile = new File(indicatorsDir + File.separator + "CardSelection_Virtual.txt");
 		ArrayList<String> ids = writeSelectedIndicators(virtualCardSelectionFile);
-		if(ids != null) createSkimmedCopyOfIndicatorsListXLSX(ids);
+		if (ids != null)
+			createSkimmedCopyOfIndicatorsListXLSX(ids);
 	}
-	
+
 	private void createSkimmedCopyOfIndicatorsListXLSX(ArrayList<String> ids) {
 		try {
-			
+
 			ids.add(0, "0");
 			String fileName = "Indicators_List.xlsx";
 			XSSFWorkbook newWorkbook = new XSSFWorkbook();
 			XSSFSheet newSheet = newWorkbook.createSheet("Indicators");
-			
-			File indicatorWorkbookFile = new File(fileHandler.getSupportingDOCDirectory(app.getSelectedProject(), app.getEngagementActionController().getCurrentGoal()) + File.separator + "Indicators_List.xlsx");
+
+			File indicatorWorkbookFile = new File(fileHandler.getSupportingDOCDirectory(app.getSelectedProject(),
+					app.getEngagementActionController().getCurrentGoal()) + File.separator + "Indicators_List.xlsx");
 			FileInputStream inputStream = new FileInputStream(indicatorWorkbookFile.getPath());
 			XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(inputStream);
 			Sheet sheet = workbook.getSheet("Indicator Menu");
 			int destId = 0;
-			for(String idString : ids) {
+			for (String idString : ids) {
 				int id = Integer.parseInt(idString);
-				XSSFRow sourceRow= null;
-				if(id == 0) {
+				XSSFRow sourceRow = null;
+				if (id == 0) {
 					sourceRow = (XSSFRow) sheet.getRow(id);
 
-				}else {
-					sourceRow = (XSSFRow) sheet.getRow(id+1);
+				} else {
+					sourceRow = (XSSFRow) sheet.getRow(id + 1);
 
 				}
 				XSSFRow newRow = newSheet.createRow(destId);
-				
-				 for (int i = 0; i < sourceRow.getLastCellNum(); i++) {
-			            // Grab a copy of the old/new cell
-			            XSSFCell oldCell = sourceRow.getCell(i);
-			            XSSFCell newCell = newRow.createCell(i);
-			            // If the old cell is null jump to next cell
-			            if (oldCell == null) {
-			                continue;
-			            }
 
-			            // Copy style from old cell and apply to new cell
-			            XSSFCellStyle newCellStyle = newWorkbook.createCellStyle();
-			            newCellStyle.cloneStyleFrom(oldCell.getCellStyle());
-			            newCell.setCellStyle(newCellStyle);
+				for (int i = 0; i < sourceRow.getLastCellNum(); i++) {
+					// Grab a copy of the old/new cell
+					XSSFCell oldCell = sourceRow.getCell(i);
+					XSSFCell newCell = newRow.createCell(i);
+					// If the old cell is null jump to next cell
+					if (oldCell == null) {
+						continue;
+					}
 
-			            // If there is a cell comment, copy
-			            if (oldCell.getCellComment() != null) {
-			                newCell.setCellComment(oldCell.getCellComment());
-			            }
+					// Copy style from old cell and apply to new cell
+					XSSFCellStyle newCellStyle = newWorkbook.createCellStyle();
+					newCellStyle.cloneStyleFrom(oldCell.getCellStyle());
+					newCell.setCellStyle(newCellStyle);
 
-			            // If there is a cell hyperlink, copy
-			            if (oldCell.getHyperlink() != null) {
-			            	newCell.setCellValue(oldCell.getHyperlink().toString());
+					// If there is a cell comment, copy
+					if (oldCell.getCellComment() != null) {
+						newCell.setCellComment(oldCell.getCellComment());
+					}
+
+					// If there is a cell hyperlink, copy
+					if (oldCell.getHyperlink() != null) {
+						newCell.setCellValue(oldCell.getHyperlink().toString());
 //			                newCell.setHyperlink(oldCell.getHyperlink());
-			            }
+					}
 
-			            // Set the cell data type
-			            newCell.setCellType(oldCell.getCellType());
+					// Set the cell data type
+					newCell.setCellType(oldCell.getCellType());
 
-			            // Set the cell data value
-			            switch (oldCell.getCellType()) {
-			            case BLANK:// Cell.CELL_TYPE_BLANK:
-			                newCell.setCellValue(oldCell.getStringCellValue());
-			                break;
-			            case BOOLEAN:
-			                newCell.setCellValue(oldCell.getBooleanCellValue());
-			                break;
-			            case FORMULA:
-			                newCell.setCellFormula(oldCell.getCellFormula());
-			                break;
-			            case NUMERIC:
-			                newCell.setCellValue(oldCell.getNumericCellValue());
-			                break;
-			            case STRING:
-			                newCell.setCellValue(oldCell.getRichStringCellValue());
-			                break;
-			            default:
-			                break;
-			            }
-			        }
-				
+					// Set the cell data value
+					switch (oldCell.getCellType()) {
+					case BLANK:// Cell.CELL_TYPE_BLANK:
+						newCell.setCellValue(oldCell.getStringCellValue());
+						break;
+					case BOOLEAN:
+						newCell.setCellValue(oldCell.getBooleanCellValue());
+						break;
+					case FORMULA:
+						newCell.setCellFormula(oldCell.getCellFormula());
+						break;
+					case NUMERIC:
+						newCell.setCellValue(oldCell.getNumericCellValue());
+						break;
+					case STRING:
+						newCell.setCellValue(oldCell.getRichStringCellValue());
+						break;
+					default:
+						break;
+					}
+				}
+
 				destId++;
 			}
-			
+
 			OutputStream os = new FileOutputStream(getIndicatorsDir() + File.separator + fileName);
 			newWorkbook.write(os);
 			os.close();
 			newWorkbook.close();
-			inputStream.close();			
-			
+			inputStream.close();
+
 		} catch (IOException | EncryptedDocumentException e) {
 			logger.log(Level.SEVERE, "Failed to create skimmed copy of indicators list: " + e.getMessage());
 		}
-		
+
 	}
-	
+
 	private File getIndicatorsDir() {
-		return fileHandler.getIndicatorsDirectory(app.getSelectedProject(),app.getEngagementActionController().getCurrentGoal());
+		return fileHandler.getIndicatorsDirectory(app.getSelectedProject(),
+				app.getEngagementActionController().getCurrentGoal());
 	}
 
 	public ArrayList<String> writeSelectedIndicators(File virtualCardSelectionFile) {

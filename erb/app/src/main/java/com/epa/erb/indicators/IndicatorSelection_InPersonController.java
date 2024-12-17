@@ -72,18 +72,19 @@ public class IndicatorSelection_InPersonController implements Initializable {
 		ArrayList<String> selectedIndicatorIds = iSDP.getSavedSelectedIndicatorIds_InPerson();
 		for (IndicatorCard iC : iWP.parseForIndicatorCards()) {
 			try {
-				FXMLLoader fxmlLoader = new FXMLLoader(
-						getClass().getResource("/indicators/IndicatorSelector_InPerson.fxml"));
-				IndicatorSelector_InPersonController iSIP = new IndicatorSelector_InPersonController();
-				fxmlLoader.setController(iSIP);
-				HBox root = fxmlLoader.load();
-				CheckBox cBox = iSIP.getIndicatorCheckBox();
-				cBox.setId(iC.getId());
-				cBox.setText(iC.getSystem() + " - " + iC.getIndicator());
-				if (selectedIndicatorIds != null && selectedIndicatorIds.contains(iC.getId())) {
-					cBox.setSelected(true);
+				if (!iC.getIndicator().toLowerCase().contentEquals("[add your own indicator here]")) {
+					FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/indicators/IndicatorSelector_InPerson.fxml"));
+					IndicatorSelector_InPersonController iSIP = new IndicatorSelector_InPersonController();
+					fxmlLoader.setController(iSIP);
+					HBox root = fxmlLoader.load();
+					CheckBox cBox = iSIP.getIndicatorCheckBox();
+					cBox.setId(iC.getId());
+					cBox.setText(iC.getSystem() + " - " + iC.getIndicator());
+					if (selectedIndicatorIds != null && selectedIndicatorIds.contains(iC.getId())) {
+						cBox.setSelected(true);
+					}
+					indicatorVBox.getChildren().add(root);
 				}
-				indicatorVBox.getChildren().add(root);
 			} catch (Exception e) {
 				logger.log(Level.SEVERE, "Failed to load IndicatorSelector_InPerson.fxml: " + e.getMessage());
 			}
