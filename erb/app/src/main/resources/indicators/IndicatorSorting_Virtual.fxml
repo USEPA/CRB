@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vBox" prefHeight="730.0" prefWidth="1061.0" spacing="10.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="vBox" prefHeight="730.0" prefWidth="1061.0" spacing="10.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox alignment="CENTER">
          <children>
@@ -179,7 +179,7 @@
             </BorderPane>
          </content>
       </ScrollPane>
-      <HBox alignment="CENTER_LEFT">
+      <HBox alignment="CENTER_RIGHT">
          <children>
             <Button mnemonicParsing="false" onAction="#saveButtonAction" stylesheets="@../button.css" text="Save">
                <font>
