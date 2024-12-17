@@ -342,7 +342,6 @@ public class XMLManager {
 											borderVBox.setPadding(new Insets(5.0));
 											borderVBox.setFillWidth(true);
 											String backgroundColor = borderBlockElement.getAttribute("background");
-											System.out.println("Background Color: " + backgroundColor);
 											borderVBox.setStyle("-fx-border-color: black;" + "-fx-background-color: " + backgroundColor + ";");
 
 											TextFlow borderBlockTextFlow = new TextFlow();
