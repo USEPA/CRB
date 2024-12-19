@@ -17,7 +17,7 @@
 			</text>
 		</textBlock>
 		<textBlock>
-			<borderBlock background="#FFFFFFF" border="1.0">
+			<borderBlock background="#FFFFFF" border="1.0">
 					<text
 					size="16.0"
 					fontFamily="System"
@@ -752,7 +752,7 @@
 			</text>
 		</textBlock>
 		<textBlock>
-			<borderBlock background="#FFFFFFF" border="1.0">
+			<borderBlock background="#FFFFFF" border="1.0">
 					<text
 					size="16.0"
 					fontFamily="System"
@@ -1086,7 +1086,7 @@
 			</text>
 		</textBlock>
 		<textBlock>
-			<borderBlock background="#FFFFFFF" border="1.0">
+			<borderBlock background="#FFFFFF" border="1.0">
 					<text
 					size="16.0"
 					fontFamily="System"
@@ -1198,7 +1198,7 @@
 			</text>
 		</textBlock>
 		<textBlock>
-			<borderBlock background="#FFFFFFF" border="1.0">
+			<borderBlock background="#FFFFFF" border="1.0">
 					<text
 					size="16.0"
 					fontFamily="System"
@@ -1338,7 +1338,7 @@
 			</text>
 		</textBlock>
 		<textBlock>
-			<borderBlock background="#FFFFFFF" border="1.0">
+			<borderBlock background="#FFFFFF" border="1.0">
 					<text
 					size="16.0"
 					fontFamily="System"
@@ -1854,7 +1854,7 @@
 			</text>
 		</textBlock>
 		<textBlock>
-			<borderBlock background="#FFFFFFF" border="1.0">
+			<borderBlock background="#FFFFFF" border="1.0">
 					<text
 					size="16.0"
 					fontFamily="System"
