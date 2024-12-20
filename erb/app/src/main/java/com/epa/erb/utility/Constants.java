@@ -1,6 +1,5 @@
 package com.epa.erb.utility;
 
-import java.awt.Dimension;
 import java.io.File;
 
 public class Constants {

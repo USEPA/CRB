@@ -7,7 +7,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import com.epa.erb.forms.MainFormController;
 import com.epa.erb.forms.AlternativeFormController;
-import com.epa.erb.forms.FormController;
 import com.epa.erb.utility.FileHandler;
 import com.epa.erb.utility.IdAssignments;
 import com.epa.erb.utility.MainPanelHandler;

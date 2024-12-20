@@ -58,14 +58,14 @@ public class XMLManager {
 		fileHandler = new FileHandler(app);
 	}
 	
-	private boolean isValidColor(String colorString) {
-        try {
-            Color.web(colorString);
-            return true;
-        } catch (IllegalArgumentException e) {
-            return false;
-        }
-    }
+//	private boolean isValidColor(String colorString) {
+//        try {
+//            Color.web(colorString);
+//            return true;
+//        } catch (IllegalArgumentException e) {
+//            return false;
+//        }
+//    }
 
 	public void writeWordCloudDataXML(File xmlFile, ArrayList<WordCloudItem> wordCloudItems) {
 		if (xmlFile != null && wordCloudItems != null) {

@@ -47,6 +47,7 @@ public class FinalReportTable {
 					copyTable(table);
 				}
 			}
+			doc.close();
 		} catch (IOException e) {
 			logger.log(Level.SEVERE, "Failed to write table to report doc: " + e.getMessage());
 		}

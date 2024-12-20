@@ -7,7 +7,6 @@ import org.controlsfx.control.BreadCrumbBar;
 import com.epa.erb.project.Project;
 import com.epa.erb.utility.MainPanelHandler;
 
-import javafx.scene.Parent;
 import javafx.scene.control.TreeItem;
 
 public class MyBreadCrumbBar extends BreadCrumbBar<String> {
