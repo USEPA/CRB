@@ -50,6 +50,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.control.Tooltip;
 import javafx.scene.control.TreeCell;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
@@ -82,6 +83,8 @@ public class FinalReportSelectionController implements Initializable {
 	@FXML
 	Button infoButton;
 	@FXML
+	Tooltip infoToolTip;
+	@FXML
 	ListView<FinalReportItem> listView;
 	@FXML
 	TreeView<FinalReportItem> availableDataTreeView;
@@ -90,7 +93,12 @@ public class FinalReportSelectionController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		xmlManager = new XMLManager(app);
 		fileHandler = new FileHandler(app);
-
+		
+		infoToolTip.setText("The Summary Report is a word document compiled of user selected components completed throughout the ERB process.\r\n"
+				+ "\r\n"
+				+ "To review a component before adding it to the report, click the component hyperlink in the \"Select Components\" section.\r\n"
+				+ "To add components to the Summary Report, click the checkbox to the left of the component(s), then click the right arrow to move them to the \"Included Components\".");
+		
 		//Handle custom check boxes and objects for tree view and list view
 		listView.setCellFactory(lv -> createListCell());
 		availableDataTreeView.setCellFactory(tv -> createTreeCell());
