@@ -543,9 +543,9 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Hyperlink"
-			text="www.epa.gov/cira/social-vulnerability-report"
+			text="https://www.epa.gov/cira/social-vulnerability-report"
 			linkType="URL"
-			link="www.epa.gov/cira/social-vulnerability-report">
+			link="https://www.epa.gov/cira/social-vulnerability-report">
 			</text>
 		</textBlock>
 		<textBlock>

@@ -554,7 +554,7 @@
 			fontStyle="Hyperlink"
 			text="EPA's green infrastructure cost-benefit resources"
 			linkType="URL"
-			link="https://www.epa.gov/green-infrastructure/green-infrastructure-cost-benefit-resources">
+			link="https://www.epa.gov/green-infrastructure/benefits-green-infrastructure">
 			</text>
 			<text
 			size="16.0"
@@ -1044,7 +1044,7 @@
 			fontStyle="Hyperlink"
 			text="parametric mechanism"
 			linkType="URL"
-			link="https://www.greenfinanceinstitute.co.uk/gfihive/case-studies/quintana-roo-reef-protection-parametric-insurance">
+			link="https://hive.greenfinanceinstitute.com/gfihive/revenues-for-nature/case-studies/quintana-roo-reef-protection-parametric-insurance/">
 			</text>
 			<text
 			size="16.0"
@@ -1622,7 +1622,7 @@
 			fontStyle="Hyperlink"
 			text="environmental, climate, and socioeconomic burdens"
 			linkType="URL"
-			link="https://screeningtool.geoplatform.gov/justice40-tool/main/en/methodology/">
+			link="https://screeningtool.geoplatform.gov/en/methodology/">
 			</text>
 			<text
 			size="16.0"
@@ -1652,7 +1652,7 @@
 			fontStyle="Hyperlink"
 			text="environmental, climate, or other burdens"
 			linkType="URL"
-			link="https://screeningtool.geoplatform.gov/justice40-tool/main/en/methodology/">
+			link="https://screeningtool.geoplatform.gov/en/methodology/">
 			</text>
 			<text
 			size="16.0"
@@ -2058,9 +2058,9 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Hyperlink"
-			text="https://screeningtool.geoplatform.gov/en/methodology"
+			text="https://screeningtool.geoplatform.gov/en/methodology/"
 			linkType="URL"
-			link="https://screeningtool.geoplatform.gov/en/methodology">
+			link="https://screeningtool.geoplatform.gov/en/methodology/">
 			</text>
 		</textBlock>
 		<textBlock>
