@@ -31,7 +31,7 @@ public class GoalCreation{
 		xmlManager.writeProjectMetaXML(projectMetaFile, project);
 	}
 	
-	public void writeGoalsMetaData(ArrayList<Goal> goals) {
+	public void writeGoalsMetaData(ArrayList<Goal> goals, String projectName) {
 		if (goals != null) {
 			createGoalsDirectory();
 			for (Goal goal : goals) {
@@ -39,20 +39,25 @@ public class GoalCreation{
 				createSupportingDocDirectory(goal);
 				File supportingDOCDirectory = fileHandler.getSupportingDOCDirectory(project, goal);
 				if(supportingDOCDirectory != null && supportingDOCDirectory.exists()) {
-					copyGlobalSupportingDocsToGoalSupportingDocs(supportingDOCDirectory);
+					if(projectName.contentEquals("Explore")) {
+						copyGlobalSupportingDocsToGoalSupportingDocs(supportingDOCDirectory, true);
+					}else {
+						copyGlobalSupportingDocsToGoalSupportingDocs(supportingDOCDirectory,false);
+					}
 				}
 			}
 		} else {
 		}
 	}
 	
-	private void copyGlobalSupportingDocsToGoalSupportingDocs(File goalSupportingDOCDirectory) {
+	private void copyGlobalSupportingDocsToGoalSupportingDocs(File goalSupportingDOCDirectory, boolean readOnly) {
 		if(goalSupportingDOCDirectory != null) {
 			ArrayList<String> worksheetNames = xmlManager.parseWorksheetsXML(fileHandler.getWorksheetsFileFromResources());			
 			for(String worksheetName: worksheetNames) {
 				File sourceFile = fileHandler.getSupportingDocFromResources(worksheetName);
 				File destFile = new File(goalSupportingDOCDirectory + File.separator + sourceFile.getName());
 				fileHandler.copyFile(sourceFile, destFile);
+				if(readOnly) destFile.setReadOnly();
 			}
 		}
 	}

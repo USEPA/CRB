@@ -148,7 +148,7 @@ public class ProjectCreationController implements Initializable {
 	
 	private void createFacilitatorProjectFiles(GoalCreation goalCreationController, Project project, ArrayList<Goal> projectGoals) {
 		goalCreationController.writeProjectMetaData(project);
-		goalCreationController.writeGoalsMetaData(projectGoals);
+		goalCreationController.writeGoalsMetaData(projectGoals, project.getProjectName());
 	}
 	
 	private Goal createGoal(GoalCreation goalCreationController, Project project) {
