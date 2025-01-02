@@ -13,7 +13,7 @@ plugins {
 }
 
 group="erb"
-version="1.0.2"
+version="1.0.3"
 
 javafx{
     version = '17.0.11'
@@ -21,8 +21,8 @@ javafx{
 }
 
 application {
-    mainModule = 'com.epa.erb'
-    mainClass = 'com.epa.erb.Main'
+    mainModule = 'gov.epa.equitableresiliencebuilder'
+    mainClass = 'gov.epa.equitableresiliencebuilder.Main'
 }
 
 repositories {
@@ -68,7 +68,7 @@ jlink {
     jpackage {
         imageName='ERB'
    		if(org.gradle.internal.os.OperatingSystem.current().windows){
-   			//imageOptions += ['--icon', 'src/main/resources/bridge_tool_logo.ico']
+   			//imageOptions += ['--icon', 'src/main/resources/icon.ico']
    		} 
    		if(org.gradle.internal.os.OperatingSystem.current().macOsX) {
    			//imageOptions += ['--icon', 'src/main/resources/bridge_tool_logo.png'] 

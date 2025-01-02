@@ -1,4 +1,4 @@
-module com.epa.erb {
+module gov.epa.equitableresiliencebuilder {
 	requires java.base;
 	requires javafx.fxml;
 	requires javafx.base;
@@ -17,27 +17,27 @@ module com.epa.erb {
 	requires transitive javafx.graphics;
 	requires transitive javafx.controls;
 	requires transitive org.apache.poi.ooxml;
-	opens com.epa.erb to javafx.fxml;
-	opens com.epa.erb.goal to javafx.fxml;
-	opens com.epa.erb.excel to javafx.fxml;
-	opens com.epa.erb.forms to javafx.fxml;
-	opens com.epa.erb.print to javafx.fxml;
-	opens com.epa.erb.project to javafx.fxml;
-	opens com.epa.erb.noteboard to javafx.fxml;
-	opens com.epa.erb.indicators to javafx.fxml;
-	opens com.epa.erb.finalReport to javafx.fxml;
-	opens com.epa.erb.wordcloud to javafx.fxml, javafx.base;
-	opens com.epa.erb.engagement_action to javafx.fxml, javafx.base;
-	exports com.epa.erb;
-	exports com.epa.erb.goal;
-	exports com.epa.erb.excel;
-	exports com.epa.erb.forms;
-	exports com.epa.erb.print;
-	exports com.epa.erb.project;
-	exports com.epa.erb.utility;
-	exports com.epa.erb.wordcloud;
-	exports com.epa.erb.noteboard;
-	exports com.epa.erb.indicators;
-	exports com.epa.erb.finalReport;
-	exports com.epa.erb.engagement_action;
+	opens gov.epa.equitableresiliencebuilder to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.goal to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.excel to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.forms to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.print to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.project to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.noteboard to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.indicators to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.finalReport to javafx.fxml;
+	opens gov.epa.equitableresiliencebuilder.wordcloud to javafx.fxml, javafx.base;
+	opens gov.epa.equitableresiliencebuilder.engagement_action to javafx.fxml, javafx.base;
+	exports gov.epa.equitableresiliencebuilder;
+	exports gov.epa.equitableresiliencebuilder.goal;
+	exports gov.epa.equitableresiliencebuilder.excel;
+	exports gov.epa.equitableresiliencebuilder.forms;
+	exports gov.epa.equitableresiliencebuilder.print;
+	exports gov.epa.equitableresiliencebuilder.project;
+	exports gov.epa.equitableresiliencebuilder.utility;
+	exports gov.epa.equitableresiliencebuilder.wordcloud;
+	exports gov.epa.equitableresiliencebuilder.noteboard;
+	exports gov.epa.equitableresiliencebuilder.indicators;
+	exports gov.epa.equitableresiliencebuilder.finalReport;
+	exports gov.epa.equitableresiliencebuilder.engagement_action;
 }
