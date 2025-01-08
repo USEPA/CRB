@@ -193,9 +193,17 @@
 			size="16.0"
 			fontFamily="System"
 			fontStyle="Hyperlink"
-			text="Indicator Activity Preparation"
+			text="Run virtual indicator activity"
 			linkType="internal"
-			link="87">
+			link="85">
+			</text>
+			<text
+			size="16.0"
+			fontFamily="System"
+			fontStyle="Hyperlink"
+			text="Prepare Indicator Cards"
+			linkType="externalDOC"
+			link="Preparing_Indicator_Cards.docx">
 			</text>
 			<text
 			size="16.0"
@@ -212,14 +220,6 @@
 			text="Make indicator cards (printable)"
 			linkType="internal"
 			link="86">
-			</text>
-			<text
-			size="16.0"
-			fontFamily="System"
-			fontStyle="Hyperlink"
-			text="Run virtual indicator activity"
-			linkType="internal"
-			link="85">
 			</text>
 			<text
 			size="16.0"
