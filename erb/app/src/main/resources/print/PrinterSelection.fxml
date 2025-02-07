@@ -17,7 +17,7 @@
       </Label>
       <ListView fx:id="printerListView" VBox.vgrow="ALWAYS" />
       <Label fx:id="label" />
-      <HBox alignment="CENTER_LEFT">
+      <HBox alignment="CENTER_RIGHT">
          <children>
             <Button mnemonicParsing="false" onAction="#okButtonAction" stylesheets="@../button.css" text="Print" />
          </children>

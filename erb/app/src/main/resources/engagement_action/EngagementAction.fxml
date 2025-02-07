@@ -4,6 +4,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TreeView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -79,7 +82,7 @@
             </HBox>
             <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                <children>
-                  <Button minWidth="95.0" mnemonicParsing="false" onAction="#mappingButtonAction" style="-fx-background-color: #FFFFFF;" text="Mapping" textFill="#316188" visible="false">
+                 <Button minWidth="95.0" mnemonicParsing="false" onAction="#mappingButtonAction" style="-fx-background-color: #FFFFFF;" text="Mapping" textFill="#316188" visible="false">
                      <font>
                         <Font size="14.0" />
                      </font>
