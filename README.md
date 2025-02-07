@@ -55,9 +55,9 @@ For questions related to the tool or this repo, please contact: CESER@epa.gov
 
 For more information about the tool, [see the landing page](https://www.epa.gov/emergency-response-research/equitable-resilience-builder)
 
-## Citing ERB
+## Citing CRB
 
-The ERB tool and user guide: 
+The CRB tool and user guide: 
 
 (https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=359624&Lab=CESER)
 
